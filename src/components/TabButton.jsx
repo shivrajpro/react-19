@@ -1,7 +1,9 @@
-export default function TabButton({ children }) {
+export default function TabButton({ children, onSelect }) {
+  console.log("TabButton component");
+
   return (
     <li>
-      <button> {children} </button>
+      <button onClick={onSelect}> {children} </button>
     </li>
   );
 }
