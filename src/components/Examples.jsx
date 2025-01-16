@@ -29,6 +29,7 @@ export default function Examples() {
     <Section title="Examples" id="examples">
       {/* JSX Slots */}
       <Tabs
+        // ButtonsContainer="div"
         buttons={
           <>
             <TabButton onClick={() => handleSelect("components")}>
