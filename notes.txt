@@ -1,0 +1,3 @@
+state vs refs
+normal variables get reset whenever the functional component is evaluated (after state update)
+refs don't get update on component evaluation
