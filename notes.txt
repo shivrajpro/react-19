@@ -1,3 +1,10 @@
 state vs refs
 normal variables get reset whenever the functional component is evaluated (after state update)
 refs don't get update on component evaluation
+
+component composition:
+bringing the child component to parent and using
+children prop can be a solution to prop drilling
+
+Context API:
+use and useContext API can be used. use hook available in React 19 & higher version
