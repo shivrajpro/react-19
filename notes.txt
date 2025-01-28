@@ -8,3 +8,4 @@ children prop can be a solution to prop drilling
 
 Context API:
 use and useContext API can be used. use hook available in React 19 & higher version
+when context value changes the component get re-evaluated to get update the UI
