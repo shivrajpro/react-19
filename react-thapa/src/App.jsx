@@ -5,10 +5,6 @@ export const App = () => {
     <>
       <Header />
       <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
       <Footer />
     </>
   );
