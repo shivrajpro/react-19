@@ -1,8 +1,19 @@
 import styles from "./NetflixSeries.module.css";
+import styled from "styled-components";
 
 const SeriesCard = ({ series }) => {
   const ratingClass = series.rating >= 8.5 ? styles.super_hit : styles.average;
 
+  const ButtonThapa = styled.button`
+    padding: 1.2rem 2.4rem;
+    border: none;
+    font-size: 1.6rem;
+    background-color: ${(props) =>
+      props.rating >= 8.5 ? "#7dcea0" : "#f7dc6f"};
+    color: var(--btn-color);
+    font-weight: bold;
+    cursor: pointer;
+  `;
   return (
     <li key={series.id} className={styles.card}>
       <div>
@@ -20,7 +31,7 @@ const SeriesCard = ({ series }) => {
         <p>Genre: {series.genre.join(", ")} </p>
         <p>Cast: {series.cast.join(", ")} </p>
         <a href={series.watch_url} target="_blank">
-          Watch Now
+          <ButtonThapa rating={series.rating}>Watch Now</ButtonThapa>
         </a>
       </div>
     </li>
