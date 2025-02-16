@@ -1,10 +1,10 @@
 import "./components/EV.css";
-import ToggleSwitch from "./projects/ToggleSwitch";
+import CounterChallenge from "./hooks/CounterChallenge";
 
 export const App = () => {
   return (
     <section className="container">
-      <ToggleSwitch />
+      <CounterChallenge />
     </section>
   );
 };
