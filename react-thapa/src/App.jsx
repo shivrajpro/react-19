@@ -1,10 +1,11 @@
 // import "./components/EV.css";
-import { RegistrationFormReact } from "./useState/RegistrationReact";
+
+import LoginForm from "./useState/LoginForm";
 
 export const App = () => {
   return (
     <section className="container">
-      <RegistrationFormReact />
+      <LoginForm />
     </section>
   );
 };
