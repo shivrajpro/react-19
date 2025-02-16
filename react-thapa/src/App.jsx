@@ -1,10 +1,10 @@
-import "./components/EV.css";
-import CounterChallenge from "./hooks/CounterChallenge";
+// import "./components/EV.css";
+import { RegistrationFormReact } from "./useState/RegistrationReact";
 
 export const App = () => {
   return (
     <section className="container">
-      <CounterChallenge />
+      <RegistrationFormReact />
     </section>
   );
 };
